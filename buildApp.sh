@@ -2,4 +2,8 @@
 set -ex
 
 cd ./travisIntegrationTesting
-msbuild ./travisIntegrationTesting/travisIntegrationTesting.csproj
+"C:\Program Files (x86)\MSBuild\14.0\Bin\Msbuild.exe" ./travisIntegrationTesting/travisIntegrationTesting.csproj
+
+cd C:
+ls windows/Microsoft.NET/
+ls "C:\Program Files (x86)\MSBuild\14.0\Bin"
