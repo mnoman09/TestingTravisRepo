@@ -1,0 +1,8 @@
+os: windows
+jobs: 
+  include:
+    - stage: 'Building and running Net Framerwork console app'
+      cache: false
+      script:
+        - bash ./buildApp.sh
+        - travisIntegrationTesting/travisIntegrationTesting/bin/Debug/travisIntegrationTesting.exe
