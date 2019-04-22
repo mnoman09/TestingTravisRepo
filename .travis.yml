@@ -1,0 +1,8 @@
+os: windows
+language: cpp
+jobs: 
+  include:
+    - stage: 'Building and running NetFramework web Api console app'
+      cache: false
+      script:
+        - bash ./buildApp.sh

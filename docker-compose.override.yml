@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  samplewebapi:
+    ports:
+      - "3000"
+networks:
+  default:
+    external:
+      name: nat
