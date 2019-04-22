@@ -4,5 +4,5 @@ services:
   samplewebapi:
     image: samplewebapi
     build:
-      context: .\SampleWebApi
+      context: ./
       dockerfile: Dockerfile
