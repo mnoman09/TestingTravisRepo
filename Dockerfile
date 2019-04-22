@@ -1,4 +1,6 @@
 FROM microsoft/aspnet:4.7.2
-ARG source  
-WORKDIR /inetpub/wwwroot  
-COPY ${source:-obj/Docker/publish} .
+# The final instruction copies the site you published earlier into the container.
+COPY ./bin/Release/PublishOutput/ /inetpub/wwwroot
+EXPOSE 3000
+
+
