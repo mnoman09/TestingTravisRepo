@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  samplewebapi:
+    image: samplewebapi
+    build:
+      context: ./
+      dockerfile: Dockerfile
