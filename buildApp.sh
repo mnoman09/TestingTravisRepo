@@ -8,4 +8,6 @@ echo "content of ...."
 ls "C:\Program Files (x86)\Microsoft Visual Studio"
 "C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\Bin\Msbuild.exe" ./SampleWebApi/SampleWebApi.csproj
 ls ./SampleWebApi/SampleWebApi
+choco install visualstudio2017testagents
+choco upgrade visualstudio2017testagent
 ./dockerbuild.sh
